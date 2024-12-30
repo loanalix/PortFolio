@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - Mon Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Mes Compétences</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <!-- <li><a href="contact.html">Contact</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section des compétences techniques -->
+        <section>
+            <h2>Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Langages</h3>
+                    <ul>
+                        <li>C#</li>
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Frameworks et Bibliothèques</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Bootstrap</li>
+                        <li>DirectX 12</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Outils</h3>
+                    <ul>
+                        <li>Unity</li>
+                        <li>Git / GitHub</li>
+                        <li>Visual Studio Code</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section des soft skills -->
+        <section>
+            <h2>Soft Skills</h2>
+            <ul class="soft-skills">
+                <li>Communication efficace</li>
+                <li>Travail en équipe</li>
+                <li>Résolution de problèmes</li>
+                <li>Gestion du temps</li>
+            </ul>
+        </section>
+
+        <!-- Section du CV -->
+        <section>
+            <h2>Mon CV</h2>
+            <div class="grid-projets">
+                <div class="projet">
+                    <img src="../image/ALIX-Loan-CV.png" alt="CV">
+                </div>
+            <p>Vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous :</p>
+            <a href="../document/ALIX-Loan-CV.pdf" download class="btn-download">Télécharger mon CV</a>
+        </section>
+    </main>
+    <div id="imagePreview" class="image-preview">
+        <span id="closePreview" class="close-preview">&times;</span>
+        <img id="previewImage" src="" alt="Aperçu de l'image">
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Loan Alix</p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
