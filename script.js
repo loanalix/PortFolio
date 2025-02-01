@@ -45,8 +45,20 @@ function setupImagePreview() {
     });
 }
 
+// Fonction pour charger la vidéo en asynchrone
+function loadVideo() {
+    let video = document.getElementById("background-video");
+    let source = document.createElement("source");
+    source.src = "videos/Background.mp4"; // Chemin vers ta vidéo
+    source.type = "video/mp4";
+    video.appendChild(source);
+    video.load();
+    video.play();
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     setupSmoothScrolling();
     setupImagePreview();
+    loadVideo();
 });
 
