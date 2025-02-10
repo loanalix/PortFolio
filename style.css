@@ -7,17 +7,19 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #100235; /* Arrière-plan sombre */
-    color: #E0E0E0; /* Texte clair pour contraste */
+    background-color: #100235; 
+    color: #E0E0E0; 
 }
 
 /* En-tête */
 header {
-    background: linear-gradient(45deg, #8A2BE2, #00FF00); /* Violet à vert néon */
+    background: linear-gradient(45deg, #8A2BE2, #00FF00); 
     color: #E0E0E0;
     padding: 2rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    position: relative;
 }
 
 header h1 {
@@ -44,20 +46,40 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #FF6700; /* Orange vif pour le hover */
+    color: #FF6700; 
 }
+
+.social-icons {
+    display: flex;
+    gap: 10px; 
+    position: absolute; 
+    top: 2rem; 
+    right: 2rem; 
+}
+
+.social-icons img {
+    width: 30px; 
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* hover effect */
+}
+
+
 
 section {
     padding: 2rem;
     margin: 2rem auto;
     max-width: 800px;
     border-radius: 10px;
-    background: #1E1E1E; /* Fond gris anthracite */
+    background: #1E1E1E; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 section h2 {
-    color: #00FF00; /* Vert néon */
+    color: #00FF00; 
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -65,9 +87,9 @@ section h2 {
 /* Section "À propos de moi" */
 #about-me {
     display: flex;
-    flex-direction: column; /* Empile les éléments verticalement */
-    align-items: center;    /* Centre les éléments horizontalement */
-    justify-content: center; /* Centre les éléments verticalement */
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
     padding: 2rem;
     background-color: #1E1E1E;
     border-radius: 10px;
@@ -78,9 +100,9 @@ section h2 {
 
 .profile {
     display: flex;
-    flex-direction: column; /* Empile l'image et le texte */
-    align-items: center;    /* Centre les éléments horizontalement */
-    text-align: center;     /* Centre le texte dans le conteneur */
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;    
 }
 
 .photo-profil {
@@ -128,7 +150,7 @@ section h2 {
 
 #projets .projet:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 255, 0, 0.5); /* Effet lumineux vert */
+    box-shadow: 0 6px 12px rgba(0, 255, 0, 0.5); 
 }
 
 #projets .projet img {
@@ -156,7 +178,7 @@ section h2 {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
-    background: #008CFF; /* Bleu électrique */
+    background: #008CFF; 
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -226,7 +248,7 @@ button:hover {
 
 .projet:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 255, 0, 0.5); /* Effet lumineux vert */
+    box-shadow: 0 6px 12px rgba(0, 255, 0, 0.5); 
 }
 
 .projet img {
@@ -271,7 +293,7 @@ button:hover {
 
 /* Conteneur d'aperçu */
 .image-preview {
-    display: none; /* Cache l'aperçu par défaut */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
@@ -280,7 +302,7 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* S'assure que l'élément est au-dessus des autres */
+    z-index: 1000; 
 }
 
 /* Image affichée */
@@ -364,8 +386,8 @@ button:hover {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    z-index: -100; /* Très bas pour ne pas gêner les interactions */
-    pointer-events: none; /* Empêche la vidéo de capter les clics */
+    z-index: -100; 
+    pointer-events: none; 
 }
 
 /* Ajout d'une surcouche sombre sans bloquer les interactions */
@@ -376,16 +398,10 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Ajuste l'opacité ici */
-    z-index: -50; /* Toujours en arrière-plan */
-    pointer-events: none; /* Permet aux éléments devant d’être cliquables */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -50; 
+    pointer-events: none; 
 }
-
-/* main, header, footer {
-    position: relative;
-    z-index: 10;
-    color: white; 
-} */
 
 
 /* Responsive */
